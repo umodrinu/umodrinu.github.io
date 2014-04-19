@@ -328,7 +328,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:escopecz/umodrinu.github.io.git',
+          remote: 'git@github.com:umodrinu/umodrinu.github.io.git',
           branch: 'master'
         }
       }
