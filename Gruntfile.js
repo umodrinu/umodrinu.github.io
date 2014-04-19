@@ -329,7 +329,7 @@ module.exports = function (grunt) {
       pages: {
         options: {
           remote: 'git@github.com:escopecz/umodrinu.github.io.git',
-          branch: 'gh-pages'
+          branch: 'master'
         }
       }
     }
@@ -375,7 +375,8 @@ module.exports = function (grunt) {
     'cssmin',
     'uglify',
     'rev',
-    'usemin'
+    'usemin',
+    'buildcontrol:pages'
   ]);
 
   grunt.registerTask('default', [
