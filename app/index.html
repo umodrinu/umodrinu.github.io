@@ -42,13 +42,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Úvod</a></li>
-            <li><a href="#/mapasa">Mapa</a></li>
+            <li ng-class="getActive('/uvod')"><a href="#/uvod">Úvod</a></li>
+            <li ng-class="getActive('/dokumenty')"><a href="#/dokumenty">Dokumenty</a></li>
+            <li ng-class="getActive('/mapa')"><a href="#/mapa">Mapa</a></li>
+            <li ng-class="getActive('/kontakt')"><a href="#/kontakt">Kontakt</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="container" ng-view=""></div>
+    <div class="container">
+      <div class="fade" ng-view=""></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -69,6 +73,7 @@
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
     <!-- endbuild -->
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
