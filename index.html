@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <link rel="stylesheet" href="styles/b5268e2a.main.css"/>
+    <link rel="stylesheet" href="styles/1c13758f.main.css"/>
   </head>
   <body ng-app="umodrinuApp">
     <!--[if lt IE 7]>
@@ -39,13 +39,17 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Úvod</a></li>
-            <li><a href="#/mapasa">Mapa</a></li>
+            <li ng-class="getActive('/uvod')"><a href="#/uvod">Úvod</a></li>
+            <li ng-class="getActive('/dokumenty')"><a href="#/dokumenty">Dokumenty</a></li>
+            <li ng-class="getActive('/mapa')"><a href="#/mapa">Mapa</a></li>
+            <li ng-class="getActive('/kontakt')"><a href="#/kontakt">Kontakt</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="container" ng-view=""></div>
+    <div class="container">
+      <div class="fade" ng-view=""></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -61,8 +65,8 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="bower_components/angular/angular.js"></script>
 
-    <script src="scripts/e6bd5a1a.modules.js"></script>
+    <script src="scripts/fff85f8c.modules.js"></script>
 
-    <script src="scripts/85955815.scripts.js"></script>
+    <script src="scripts/4e62ff13.scripts.js"></script>
 </body>
 </html>
